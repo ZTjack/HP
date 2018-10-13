@@ -61,7 +61,13 @@ export default {
     theme: '换肤',
     clipboardDemo: 'Clipboard',
     i18n: '国际化',
-    externalLink: '外链'
+    externalLink: '外链',
+    elements: '配件管理',
+    cpuManagement: 'CPU管理',
+    memoryManagement: '内存管理',
+    hdd1Management: 'HDD1管理',
+    hdd2Management: 'HDD2管理',
+    graphicsManagement: 'Graphics管理'
   },
   navbar: {
     logOut: '退出登录',

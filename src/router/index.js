@@ -275,6 +275,48 @@ export const asyncRouterMap = [
       }
     ]
   },
+  {
+    path: '/elements',
+    component: Layout,
+    redirect: '/elements/cpu',
+    name: 'ELements',
+    meta: {
+      title: 'elements',
+      icon: 'edit'
+    },
+    children: [
+      {
+        path: 'cpu',
+        component: () => import('@/views/elements/index'),
+        name: 'Cpu',
+        meta: { title: 'cpuManagement' }
+      },
+      {
+        path: 'memory',
+        component: () => import('@/views/elements/index'),
+        name: 'Memory',
+        meta: { title: 'memoryManagement' }
+      },
+      {
+        path: 'hdd1',
+        component: () => import('@/views/elements/index'),
+        name: 'Hdd1',
+        meta: { title: 'hdd1Management' }
+      },
+      {
+        path: 'hdd2',
+        component: () => import('@/views/elements/index'),
+        name: 'Hdd2',
+        meta: { title: 'hdd2Management' }
+      },
+      {
+        path: 'graphics',
+        component: () => import('@/views/elements/index'),
+        name: 'Graphics',
+        meta: { title: 'graphicsManagement' }
+      }
+    ]
+  },
 
   {
     path: '/zip',
